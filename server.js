@@ -80,6 +80,6 @@ app.get('/api/:name', (req, res) => {
     // res.json(jodeci)
 })
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
     console.log(`Server is listening on on port ${PORT}`)
 })
